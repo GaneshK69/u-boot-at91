@@ -49,7 +49,7 @@
 #ifdef CONFIG_QSPI_BOOT
 #undef CONFIG_BOOTARGS
 #define CONFIG_BOOTARGS \
-	"console=ttyS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
+		"console=ttyS0,115200 console=tty0 earlyprintk root=/dev/mtdblock5 rw rootwait rootfstype=squashfs"
 #endif
 
 /* SPL */
